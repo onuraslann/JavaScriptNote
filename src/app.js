@@ -1,27 +1,53 @@
-console.log("Merhaba Kodlama.io")
-// javascripte tip güvenliği yoktur
-var eurodun = 10.25
-var eurobugün =10.35
+console.log("Hello")
+
+
+
+var dolar = 9.64
+dolar="Amerikan Doları"
+
+console.log(dolar)
+
+//Javascripte tip güvenliği yoktur 
+// var number1=10
+
+// console.log(number2)
+
+// var number2=15
+//Undefined  hatası ile karşılaşırız
+
+var number1 = 15
+var number2=21
 {
-    var eurobugün=10.40
+    var number1=44
+
 }
-console.log(eurobugün) // 10.40 degerini alır bu hatalı bir kullanımdır 
+console.log(number1)
+// JavaScripte var yerine Let kullanacağız normalde süslü parantezi görmemesi gerekiyor 
 
-// JavaScripte var yerine let kullanılır 
-let dolardun=9.20
-let dolarbugün=9.25
-
+let number3=54
+let number4=48
 {
-    let dolarbugün=9.30 
+    let number3=88
 }
-console.log(dolarbugün)
+console.log(number3) //Lette süslü parantezin içi görünmez
 
+let credis =["KonutKredisi","TaşıtKredisi","KamuKredisi","Özel Kredi"]
 
-let konutKredi = ["Konut Kredisi","Emlat Konut Kredisi","Kamu Konut Kredisi"]
-//console.log(konutKredi)
 console.log("<ul>")
-for(let i=0; i<konutKredi.length;i++){
-    console.log("<li>"+konutKredi[i]+"<li>")
+for(let i =0;i<credis.length;i++){
+    console.log("<li>"+credis[i]+"</li>")
+
+
 }
-console.log("</ul>")
-console.log("Naber")
+console.log("</ul")
+
+// JavaScripte tip güvenliği yoktur
+// const a =20
+// a=30
+//  Hata alıyorum
+// let a = 20
+ 
+// a="Ankara"
+// console.log(a)
+//Hata almam sebebi javascripte tip güvenliği olmaması
+
