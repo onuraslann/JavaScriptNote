@@ -1,36 +1,27 @@
 console.log("Merhaba Kodlama.io")
-
-//JS type safe değildir
-let dolarBugun = 9.30
-
-let dolarDun = 9.20
-dolarDun = "9.20"
+// javascripte tip güvenliği yoktur
+var eurodun = 10.25
+var eurobugün =10.35
 {
-    let dolarDun = 9.10
+    var eurobugün=10.40
 }
+console.log(eurobugün) // 10.40 degerini alır bu hatalı bir kullanımdır 
 
-console.log(dolarDun)
+// JavaScripte var yerine let kullanılır 
+let dolardun=9.20
+let dolarbugün=9.25
 
-const euroDun = 11.2
-//euroDun = 11
+{
+    let dolarbugün=9.30 
+}
+console.log(dolarbugün)
 
-console.log(euroDun)
 
-//array
-//camelCasing
-//PascalCasing
-let konutKredileri = ["Konut kredisi","Emlak Konut Kredisi","Kamu Konut Kredisi","Özel Konut Kredisi"]
-
+let konutKredi = ["Konut Kredisi","Emlat Konut Kredisi","Kamu Konut Kredisi"]
+//console.log(konutKredi)
 console.log("<ul>")
-for(let i = 0;i<konutKredileri.length;i++){
-    console.log("<li>"+konutKredileri[i]+"</li>")
+for(let i=0; i<konutKredi.length;i++){
+    console.log("<li>"+konutKredi[i]+"<li>")
 }
 console.log("</ul>")
-
-{/* <ul>
-    <li>Konut kredisi</li>
-    <li>Emlak Konut Kredisi</li>
-    <li>Kamu Konut Kredisi</li>
-</ul> */}
-
-console.log(konutKredileri)
+console.log("Naber")
