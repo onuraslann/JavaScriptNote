@@ -1,85 +1,65 @@
 console.log("Hello")
+//javascripte tipe güvenliği yoktur
+var x1 = 10;
+x1 = "Ankara"
+console.log(x1)
 
-var dolaryesterday=9.38
-var dolartoday=10.01
+//var operatörü yerine let operatörünü kullanırız
+
+var dolaryesterday = 9.38
+var dolartoday = 10.01
+{
+    var dolartoday = 10.30
+}
 console.log(dolartoday)
-//javascripte tip güvenliği yoktur
-var a =10;
-var a ="Ankara";
-
-console.log(a)
-
-//undefined
-var x=10;
-console.log(y)
-var y=20;
-
-var euroyesterday=10.30;
-var eurotoday=11.00;
+let dolaryesterday1 = 9.38
+let dolartoday1 = 10.01
 {
-    var euroyesterday=10.45;
+    let dolartoday1 = 10.30
 }
-console.log(euroyesterday)
+console.log(dolartoday1)
 
-
-//Javascripte var yerine let kullanılır 
-
-let c=10.3;
-let b=5;
-{
-    let c=20;
+let credis = ["KamuKredisi", "TaşıtKredisi", "KonutKredisi"]
+for (let i = 0; i < credis.length; i++) {
+    console.log(credis[i])
 }
-console.log(c);
 
-document.write("<li>")
-let credis =["Konut Kredisi","Taşıt Kredisi","Kamu Kredisi"]
-for(let i=0;i<credis.length;i++){
+let student = { id1: 1, name: "Onur" }
+
+ function SaveFunction(ogrenci,puan=100) {
+
+    console.log(ogrenci.id1)
+    console.log(ogrenci.name+"Aldığı puan:"+puan)
+
+}
+
+
+
+SaveFunction(student)
+console.log(typeof SaveFunction)
+
+//Rest c# params değerleri arraye çeviriyor
+
+let  showProducts=function name(id,...product) {
     
-   console.log(credis[i])
+
+    console.log(product)
    
 }
+showProducts(2,"Elma","Armut")
 
-// let x1=a;
-// let x1="Onur";
-// console.log(x1)
+//Spread : ayrıştırma
 
-let student={id:1,name:"Onur"}
-
-function save(ogrenci,puan=20) {
-    
-    // console.log(ogrenci.name+""+puan)
-}
-save(student,200)
-
-let array = [student, 1,2,3,4,5];
-for(let i =0;i<array.length;i++){
-
-    // console.log(array[i]);      
-}
-//rest parametresi array oluşturur 
-let showProducts= function (id,...products) {
-    
-console.log(id)
-console.log(products)
-}
-showProducts(20,"Elma","armut")
-
-//spread ayrıştırma işlemi sağlar
-let points=[..."abc","d",..."ef","g"];
+let points = [..."abc","d",..."efg"]
 console.log(points)
+console.log(Math.max(10,2,1114,423,34,12))
 
-//Destructuring elimizde arrayin değerini değişkene atarız
-let population =[1000,2000,3000,[4000,5000]]
-let [small,medium,high,[verify,max]]=population;
+//Destructuring elimizdeki arrayi bir değişkene atıyoruz
+
+let population  = [1000,2000,3000,[4000,5000]]
+let [small,medium,high,[verify,low]]=population;
 console.log(small)
 console.log(medium)
 console.log(high)
 console.log(verify)
-console.log(max)
-function someFunction([small1]) {
-    
-    console.log(small1)
-}
-someFunction(population)
-
-
+console.log(low)
