@@ -1,53 +1,85 @@
 console.log("Hello")
 
+var dolaryesterday=9.38
+var dolartoday=10.01
+console.log(dolartoday)
+//javascripte tip güvenliği yoktur
+var a =10;
+var a ="Ankara";
 
+console.log(a)
 
-var dolar = 9.64
-dolar="Amerikan Doları"
+//undefined
+var x=10;
+console.log(y)
+var y=20;
 
-console.log(dolar)
-
-//Javascripte tip güvenliği yoktur 
-// var number1=10
-
-// console.log(number2)
-
-// var number2=15
-//Undefined  hatası ile karşılaşırız
-
-var number1 = 15
-var number2=21
+var euroyesterday=10.30;
+var eurotoday=11.00;
 {
-    var number1=44
-
+    var euroyesterday=10.45;
 }
-console.log(number1)
-// JavaScripte var yerine Let kullanacağız normalde süslü parantezi görmemesi gerekiyor 
+console.log(euroyesterday)
 
-let number3=54
-let number4=48
+
+//Javascripte var yerine let kullanılır 
+
+let c=10.3;
+let b=5;
 {
-    let number3=88
+    let c=20;
 }
-console.log(number3) //Lette süslü parantezin içi görünmez
+console.log(c);
 
-let credis =["KonutKredisi","TaşıtKredisi","KamuKredisi","Özel Kredi"]
-
-console.log("<ul>")
-for(let i =0;i<credis.length;i++){
-    console.log("<li>"+credis[i]+"</li>")
-
-
+document.write("<li>")
+let credis =["Konut Kredisi","Taşıt Kredisi","Kamu Kredisi"]
+for(let i=0;i<credis.length;i++){
+    
+   console.log(credis[i])
+   
 }
-console.log("</ul")
 
-// JavaScripte tip güvenliği yoktur
-// const a =20
-// a=30
-//  Hata alıyorum
-// let a = 20
- 
-// a="Ankara"
-// console.log(a)
-//Hata almam sebebi javascripte tip güvenliği olmaması
+// let x1=a;
+// let x1="Onur";
+// console.log(x1)
+
+let student={id:1,name:"Onur"}
+
+function save(ogrenci,puan=20) {
+    
+    // console.log(ogrenci.name+""+puan)
+}
+save(student,200)
+
+let array = [student, 1,2,3,4,5];
+for(let i =0;i<array.length;i++){
+
+    // console.log(array[i]);      
+}
+//rest parametresi array oluşturur 
+let showProducts= function (id,...products) {
+    
+console.log(id)
+console.log(products)
+}
+showProducts(20,"Elma","armut")
+
+//spread ayrıştırma işlemi sağlar
+let points=[..."abc","d",..."ef","g"];
+console.log(points)
+
+//Destructuring elimizde arrayin değerini değişkene atarız
+let population =[1000,2000,3000,[4000,5000]]
+let [small,medium,high,[verify,max]]=population;
+console.log(small)
+console.log(medium)
+console.log(high)
+console.log(verify)
+console.log(max)
+function someFunction([small1]) {
+    
+    console.log(small1)
+}
+someFunction(population)
+
 
