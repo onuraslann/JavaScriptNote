@@ -1,11 +1,14 @@
-class Customer{
-    constructor(id,customernumber){
+class Products {
 
-        this.id=id;
-        this.customernumber=customernumber;
+    constructor(id,productNo){
 
+this.id=id;
+this.productNo=productNo;
     }
-}
-let  customer = new Customer(1,"12345"); //yeni bir nesne oluşturuyoruz 
 
-console.log(customer.customernumber)
+}
+let products = new Products(1,"12345")
+console.log(products.id)
+console.log(products.productNo)
+
+
