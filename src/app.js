@@ -33,5 +33,5 @@ console.log(y2)
 let credis = ["Konut Kredisi","Taşıt Kredisi","İhtiyac Kredisi","Araç Kredisi"]
 
 for(let i = 0;i<credis.length;i++){
-    console.log(credis[i])
+    console.log(credis[0])
 }
