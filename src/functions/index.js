@@ -51,4 +51,5 @@ let[icAnadolu,Marmara,Ege]=[
     {Name:"Ege",population:"9M"}
 ]
 console.log(Ege)
+console.log(Marmara)
 
