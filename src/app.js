@@ -1,70 +1,37 @@
 console.log("Hello World")
 
-console.log("Onur")
 //JavaScripte tip güvenliği yoktur
-var dolaryesterday = 10.45;
-dolaryesterday ="Ankara";
-console.log(dolaryesterday)
 
-//JavaScripte var yerine let kullanılır
-var euroyesterday=11.00
-var eurotoday = 11.20
+var x = 10;
+x="Ankara"
+
+console.log(x)
+
+//JavaScripte var yerine let kullanılır 
+
+var y1=10;
+var y2=22;
 {
-    var eurotoday=12;
+
+  var   y2=20;
+
+    
 }
-console.log(eurotoday)
+console.log(y2)
 
-
-let euro1=11.35
-let euro2=11.45
+let y11=10;
+let y22=20;
 {
-let euro2 = 12;
 
+   let  y22=30;
 
+    
 }
-console.log(euro2)
+console.log(y2)
 
-let credis =["Konut Kredisi","Taşıt Kredisi","Özel Kredi","Kamu Kredisi"]
-for(let i=0;i<credis.length;i++){
 
+let credis = ["Konut Kredisi","Taşıt Kredisi","İhtiyac Kredisi","Araç Kredisi"]
+
+for(let i = 0;i<credis.length;i++){
     console.log(credis[i])
 }
-
-
-let student = {id:1,name:"onur"}
-
-function Save(ogr,puan =20) {
-    
-    console.log( ogr.name+"Aldığı puan : "+puan)
-    console.log(ogr.id)
-}
-Save(student)
-
-//Rest : Array haline getiriyor
-
-let showProducts = function name(idd,...products) 
-
-{
-console.log(idd)
-console.log(products)
-
-   
-    
-}
-console.log(typeof showProducts)
-showProducts(20,"Elma","Karpuz")
-
-//Spread :Ayrıştırma yapar //abc nin önüne ... koyduğumuz zaman a b c olur
-let points =[..."abc","d","e","f",..."opr"]
-
-console.log(points)
-
-//Destructuring : elmizdeki arrayin değerini bir değişkene atarız 
-
-let population = [1000,2000,3000,[4000,5000]];
-let [small,medium,high,[x,y]]=population;
-console.log(small)
-console.log(medium)
-console.log(high)
-console.log(x)
-console.log(y)
