@@ -5,38 +5,36 @@ let cart = [
 
 
 ]
-
-//map : Listeyi tek tek dolaşır 
+//map listeki elemanları tek tek dolaşır 
 
 cart.map(product=>{
-    console.log(product.productName  + " fiyatı : " +product.unitPrice)
+    console.log(product.productName + "  Fiyatı : " +product.unitPrice)
 })
 
-//filter filtre vermemizi sağlar
-
-let unitPriceFilter = cart.filter(product=>product.unitPrice>1000 && product.quantity>8)
-console.log(unitPriceFilter)
-
-//Reduce toplam değeri bulamızı sağlar
-
-let total  = cart.reduce((acc,product)=>acc+product.unitPrice,0);
-console.log("Toplam Fiyat  : "+total)
+//filter : filtreleme işlemlerini gerçekleştirir
 
 
-//Referans tipte atamalar adres üzerinden gerçekleşir 
+ let CartOver2 = cart.filter(product=>product.quantity>5  && product.unitPrice>5000)
+console.log(CartOver2)
+
+//Reduce : Toplam değeri ekrana getirir
+
+let total  =cart.reduce((acc,product)=>acc+product.unitPrice,0)
+console.log("Toplam Fiyat : " +total)
+
+//Referans tiplerde eklediğimiz listenin adresi atanır . 
 function addToCart(sepet){
-
-    sepet.push({id:4,productName:"Klaveye",quantity:11,unitPrice:120})
+    sepet.push( {id:3,productName:"Kalem",quantity:13,unitPrice:18}
+    )
 }
 addToCart(cart)
 console.log(cart)
 
-//Değer tipteki atamalarda değer atanır adres atanmaz . 
+//Değer tiplerde değer atandıktan sonra işi biter 
 
-let sayi = 10;
-function AddToNumber(number){
-
-    number = number+1;
+let sayi =10
+function NumberTotal(number){
+    number = number+1
 }
-AddToNumber(sayi);
-console.log(sayi)
+NumberTotal(sayi)
+console.log(sayi    )
